@@ -7,6 +7,7 @@ const $img = $('#img');
 const $description = $('#description');
 const $source = $('#source');
 const $more = $('#more');
+const $error = $('#error')
 const $userInput = $('#input[type="text"]')
 
 
@@ -26,6 +27,7 @@ function handleGetEvent(event){
     },
     (error) => {
         console.log('bad request: ', error);
+        $error.text("Please enter valid country code.")
     }
     );
 }
