@@ -8,7 +8,7 @@ const $description = $('#description');
 const $source = $('#source');
 const $more = $('#more');
 const $error = $('#error')
-const $userInput = $('#input[type="text"]')
+const $userInput = $('#country[name="country"]')
 
 
 $('form').on('submit', handleGetEvent)
