@@ -32,7 +32,7 @@ function handleGetEvent(event){
 
 function defer(){
     $headline.text(newsData.articles[0].title);
-    $img.attr("src", newsData.articles[0].urlToImage);
+    // $img.attr("src", newsData.articles[0].urlToImage);
     $description.text(newsData.articles[0].description);
     $source.text(newsData.articles[0].source.name);
     $more.attr("href", newsData.articles[0].url)

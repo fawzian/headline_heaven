@@ -1,0 +1,10 @@
+#body {
+    background: url('https://images.unsplash.com/photo-1588773846628-13fce0a32105?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3c3BhcGVyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60')
+}
+
+#box {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
