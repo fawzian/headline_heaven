@@ -21,12 +21,8 @@ function handleGetEvent(event){
     }).then(
         (data) => {
         console.log(data);
-        newsData = data
-        $headline.text(newsData.articles[0].title);
-        $img.attr("src", newsData.articles[0].urlToImage);
-        $description.text(newsData.articles[0].description);
-        $source.text(newsData.articles[0].source.name);
-        $more.attr("href", newsData.articles[0].url)
+        newsData = data;
+        defer();
     },
     (error) => {
         console.log('bad request: ', error);
@@ -34,4 +30,11 @@ function handleGetEvent(event){
     );
 }
 
+function defer(){
+    $headline.text(newsData.articles[0].title);
+    $img.attr("src", newsData.articles[0].urlToImage);
+    $description.text(newsData.articles[0].description);
+    $source.text(newsData.articles[0].source.name);
+    $more.attr("href", newsData.articles[0].url)
+}
 
